@@ -1,0 +1,8 @@
+.enlace-activo {
+    background: #007bff;
+    color: #fff;
+    border-radius: 50px;
+    display: inline-block;
+    padding: 3px 8px;
+    width: auto;
+}

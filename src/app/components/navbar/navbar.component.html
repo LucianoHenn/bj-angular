@@ -1,0 +1,28 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/banner-ico.png" width="30" height="30" alt="">
+            BlackJack
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item item" routerLinkActive="enlace-activo animated fadeIn faster">
+                    <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item" routerLinkActive="enlace-activo animated fadeIn faster">
+                    <a routerLinkActive="enlace-activo animated fadeIn faster" [routerLink]="['play']" class="nav-link">Play</a>
+                </li>
+                <li class="nav-item" routerLinkActive="enlace-activo animated fadeIn faster">
+                    <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster" href="#">Jugadores</a>
+                </li>
+                <li class="nav-item" routerLinkActive="enlace-activo animated fadeIn faster">
+                    <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster">Reportes</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

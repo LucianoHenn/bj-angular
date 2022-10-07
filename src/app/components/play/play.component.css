@@ -1,0 +1,58 @@
+/* You can add global styles to this file, and also import other style files */
+body, html {
+    height: 100%;
+  }
+  
+  .bg { 
+    /* The image used */
+    background-image: url("https://www.videoslots.com/file_uploads/backgrounds/casinoholdem_bg.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.card {
+
+    height: 15vh;
+    width: auto;
+    padding: 0;
+    border: 1px solid black;
+    margin-left: 1rem;
+}
+
+.backCard {
+    height: 15vh;
+    width: auto;
+    padding: 0;
+    margin-left: -5px;
+    border-radius: 20px;
+}
+
+.row-wallet {
+    width: 800px;
+}
+
+h1 {
+    font-weight: 200 !important;
+}
+
+.con {
+
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+
+}
+
+hr {
+    top: 1px;
+    border: none;
+    height: 2px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 5px;
+}
