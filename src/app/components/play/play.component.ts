@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { createApplication } from '@angular/platform-browser';
 import { Card } from 'src/app/models/card';
 
 @Component({
@@ -10,6 +11,7 @@ export class PlayComponent implements OnInit {
 
 
   cards: Card[] = []
+
   suits: String[] = ['clubs', 'spades', 'hearts', 'diamonds']
   yourCards: Card[] = []
   dealerCards: Card[] = []
