@@ -1,0 +1,49 @@
+<body class="bg">
+<div class="text-white animated con">
+    <div class="d-flex justify-content-around">
+        <div class="display-6">
+            <span>Billetera</span>
+            <h5 class="text-center">$1,000</h5>
+        </div>
+        <div class="display-6">Apuesta Actual</div>
+        <div class="display-6">Realizar apuesta</div>
+    </div>
+    <hr style="height: 20px;">
+    <div class="d-flex justify-content-center">
+        <div>
+            <div class="row mt-3">
+                <h1 class="mb-3">Dealer (<span>{{ dealerScore }}</span>)</h1>
+                <img *ngFor="let card of dealerCards" class="card animated fadeIn faster"
+                    src="{{ 'assets/cards/'+card.number+'_of_'+card.suit+'.png' }}" alt="">
+                <img *ngIf="dealerCards.length === 1" class="backCard animated fadeIn faster"
+                    src="https://boardgames-bg.com/images/thumbnails/1001/1000/detailed/24/bicycle-prestige-100-plastic-poker-playing-card-deck-red-raider-back-usp1018425r-board-game-24268_yde4-zm.png"
+                    alt="">
+            </div>
+            <div class="row mt-3">
+                <h1 class="mb-3">You (<span>{{ yourScore }}</span>)</h1>
+                <img *ngFor="let card of yourCards" class="card animated fadeIn faster"
+                    src="{{ 'assets/cards/'+card.number+'_of_'+card.suit+'.png' }}" alt="">
+            </div>
+            <div class="mt-5 d-flex justify-content-between">
+                <button type="button" class="btn btn-success" (click)="hit()" [disabled]="gameIsOver">Pedir
+                    Carta</button>
+                <button type="button" class="btn btn-primary" [disabled]="gameIsOver"
+                    (click)="stay()">Plantarse</button>
+                <button type="button" class="btn btn-warning" [disabled]="!gameIsOver" (click)="reset()">Jugar de
+                    Nuevo</button>
+            </div>
+            <div class="row">
+                <div *ngIf="gameIsOver && gano" class="alert alert-success text-center mt-3" role="alert">
+                    Ganaste, felicitaciones!
+                </div>
+                <div *ngIf="gameIsOver && empate" class="alert alert-info text-center mt-3" role="alert">
+                    Empate...Inténtalo otra vez.
+                </div>
+                <div *ngIf="gameIsOver && perdio" class="alert alert-danger text-center mt-3" role="alert">
+                    Perdiste...Inténtalo otra vez.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
