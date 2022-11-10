@@ -1,6 +1,6 @@
 <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/home">
             <img src="assets/img/banner-ico.png" width="30" height="30" alt="">
             BlackJack
         </a>
@@ -13,14 +13,17 @@
                 <li class="nav-item item" routerLinkActive="enlace-activo animated fadeIn faster">
                     <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item" routerLinkActive="enlace-activo animated fadeIn faster">
-                    <a routerLinkActive="enlace-activo animated fadeIn faster" [routerLink]="['play']" class="nav-link">Play</a>
+                <li class="nav-item item" routerLinkActive="enlace-activo animated fadeIn faster">
+                    <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster" [routerLink]="['profile']">Perfil</a>
                 </li>
                 <li class="nav-item" routerLinkActive="enlace-activo animated fadeIn faster">
+                    <a routerLinkActive="enlace-activo animated fadeIn faster" [routerLink]="['play']" class="nav-link">Jugar</a>
+                </li>
+                <!-- <li class="nav-item" routerLinkActive="enlace-activo animated fadeIn faster">
                     <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster" href="#">Jugadores</a>
-                </li>
+                </li> -->
                 <li class="nav-item" routerLinkActive="enlace-activo animated fadeIn faster">
-                    <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster">Reportes</a>
+                    <a class="nav-link" routerLinkActive="enlace-activo animated fadeIn faster" [routerLink]="['reports']">Reportes</a>
                 </li>
             </ul>
         </div>

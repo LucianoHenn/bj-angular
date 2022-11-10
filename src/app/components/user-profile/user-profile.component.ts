@@ -4,6 +4,9 @@ import { AuthService } from './../../shared/auth.service';
 export class User {
   name: any;
   email: any;
+  created_at?: any;
+  games_amount?: any;
+  winning_percentage?: any;
 }
 @Component({
   selector: 'app-user-profile',

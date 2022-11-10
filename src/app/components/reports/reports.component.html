@@ -1,0 +1,18 @@
+<div class="contenedor">
+
+    <div *ngIf="pie">
+        <app-pie [data]="pie"></app-pie>
+    </div>
+    <div *ngIf="line">
+        <app-line [data]="line"></app-line>
+    </div>
+  
+    <div class="mt5">
+           
+        <div *ngIf="column">
+            <app-column [data]="column"></app-column>
+        </div>
+    </div>
+
+</div>
+

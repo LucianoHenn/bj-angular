@@ -12,6 +12,11 @@ import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { AuthInterceptor } from './shared/auth.interceptor';
+import { ReportsComponent } from './components/reports/reports.component';
+
+
+import { AuthGuardService } from './shared/aut-guard-service';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +26,9 @@ import { AuthInterceptor } from './shared/auth.interceptor';
     HomeComponent,
     SigninComponent,
     SignupComponent,
-    UserProfileComponent
+    UserProfileComponent,
+
+ 
   ],
   imports: [
     BrowserModule,
@@ -31,6 +38,7 @@ import { AuthInterceptor } from './shared/auth.interceptor';
     FormsModule
   ],
   providers: [
+    AuthGuardService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,

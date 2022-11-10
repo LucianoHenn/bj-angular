@@ -1,17 +1,8 @@
 <body class="bg">
 <div class="text-white animated con">
-    <div class="d-flex justify-content-around">
-        <div class="display-6">
-            <span>Billetera</span>
-            <h5 class="text-center">$1,000</h5>
-        </div>
-        <div class="display-6">Apuesta Actual</div>
-        <div class="display-6">Realizar apuesta</div>
-    </div>
-    <hr style="height: 20px;">
     <div class="d-flex justify-content-center">
         <div>
-            <div class="row mt-3">
+            <div class="row mt-5">
                 <h1 class="mb-3">Dealer (<span>{{ dealerScore }}</span>)</h1>
                 <img *ngFor="let card of dealerCards" class="card animated fadeIn faster"
                     src="{{ 'assets/cards/'+card.number+'_of_'+card.suit+'.png' }}" alt="">

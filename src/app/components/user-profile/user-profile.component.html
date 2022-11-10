@@ -1,11 +1,26 @@
-<div class="container">
-    <div class="card inner-main">
-      <div class="card-header">
-        User Profile
+<!-- <div class="container">
+
+  </div> -->
+
+  <body class="bg">
+    <div class="jumbotron jumbotron-fluid animated fadeIn faster">
+      <br>
+      <br>
+      <div class="container animated fadeIn">
+        <div class="card inner-main">
+          <div class="card-header">
+            Datos del Usuario
+          </div>
+          <div class="card-body">
+            <p class="card-text">Nombre: <strong>{{UserProfile?.name}}</strong></p>
+            <p class="card-text">Email: <strong>{{UserProfile?.email  }}</strong></p>
+            <p class="card-text">Fecha de alta: <strong>{{UserProfile?.created_at | date:('dd/MM/yyyy') }}</strong></p>
+            <p class="card-text">Cantidad de juegos: <strong>{{UserProfile?.games_amount ? UserProfile?.games_amount : 0}}</strong></p>
+            <p class="card-text">Porcentaje de victorias:
+               <strong>{{UserProfile?.winning_percentage ? ( (UserProfile?.winning_percentage / UserProfile?.games_amount) | percent ) : 0}}</strong></p>
+          </div>
+        </div>
       </div>
-      <div class="card-body">
-        <p class="card-text">Name: <strong>{{UserProfile?.name}}</strong></p>
-        <p class="card-text">Email: <strong>{{UserProfile?.email}}</strong></p>
-      </div>
+      <br>
     </div>
-  </div>
+  </body>
